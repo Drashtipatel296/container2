@@ -53,13 +53,6 @@
 //   }
 // }
 
-
-
-
-
-
-
-
 // 6. 3D Cube
 
 // import 'package:flutter/material.dart';
@@ -122,15 +115,6 @@
 //   }
 // }
 
-
-
-
-
-
-
-
-
-
 // 7.Opened door
 
 // import 'package:flutter/material.dart';
@@ -152,7 +136,7 @@
 //           appBar: AppBar(
 //             backgroundColor: Colors.black,
 //             title: const Text(
-//               "Openerd Doors",
+//               "Opened Doors",
 //               style: TextStyle(
 //                  color: Colors.white,
 //                 fontWeight: FontWeight.bold,
@@ -191,7 +175,6 @@
 
 
 
-
 // 8.Emoji
 
 import 'package:flutter/material.dart';
@@ -210,50 +193,52 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          appBar: AppBar(
+          backgroundColor: Colors.white,
+          bottomNavigationBar: const BottomAppBar(
+            color: Color(0xffFF9800),
+            child: Center(
+              child: Text(
+                'Emoji',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                ),
+              ),
+            ),
           ),
           body: Align(
             child: Center(
               child: Container(
                 height: 360,
                 width: 360,
+                alignment: Alignment.center,
                 decoration: const BoxDecoration(
                   color: Color(0xffFF9800),
                   shape: BoxShape.circle,
                 ),
-                alignment: Alignment.center,
                 child: Container(
-                  height: 380,
-                  width: 280,
+                  height: 260,
+                  width: 260,
+                  alignment: const Alignment(-0.65, -0.50),
                   decoration: const BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.orange,
                     shape: BoxShape.circle,
+                    border: Border(bottom: BorderSide(color: Colors.white,width: 20)),
                   ),
-                  alignment: Alignment.topCenter,
                   child: Container(
-                    height: 300,
-                    width: 280,
+                    height: 78,
+                    width: 78,
+                    alignment: const Alignment(75,0),
                     decoration: const BoxDecoration(
-                      color: Color(0xffFF9800),
+                      color: Colors.white,
                       shape: BoxShape.circle,
                     ),
-                    alignment: Alignment.centerRight,
                     child: Container(
-                      height: 90,
-                      width: 90,
+                      height: 76,
+                      width: 75,
                       decoration: const BoxDecoration(
                         color: Colors.white,
                         shape: BoxShape.circle,
-                      ),
-                      alignment: Alignment.centerLeft,
-                      child: Container(
-                        height: 50,
-                        width: 50,
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle,
-
-                        ),
                       ),
                     ),
                   ),
